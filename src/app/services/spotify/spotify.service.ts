@@ -11,8 +11,8 @@ import { IAlbum } from 'src/app/models/album';
   providedIn: 'root',
 })
 export class SpotifyService {
-  private clientId = '56f3056aee024c789b3a354f1011f9f2';
-  private clientSecret = '7d71fd5562104b94a0b7c66082cba665';
+  private clientId = '9de26bdfd871423b98b3ccdba0e07f6a';
+  private clientSecret = 'c9788ac5170b4bc1afe1692b453297ff';
   private Url: string;
   private headers: HttpHeaders;
   private body: HttpParams;
