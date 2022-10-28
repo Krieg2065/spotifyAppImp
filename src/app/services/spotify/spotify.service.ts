@@ -7,12 +7,13 @@ import { IToken } from 'src/app/models/token';
 import { IArtist } from 'src/app/models/artist';
 import { IAlbum } from 'src/app/models/album';
 
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root',
 })
 export class SpotifyService {
-  private clientId = '9de26bdfd871423b98b3ccdba0e07f6a';
-  private clientSecret = 'c9788ac5170b4bc1afe1692b453297ff';
+  private clientId = environment.clientId;
+  private clientSecret = environment.clientSecret;
   private Url: string;
   private headers: HttpHeaders;
   private body: HttpParams;
